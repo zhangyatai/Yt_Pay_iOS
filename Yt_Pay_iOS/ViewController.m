@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "HttpUtils.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+	[[HttpUtils sharedInstace] payWithName:@"yt" price:@"1"];
 }
 
 

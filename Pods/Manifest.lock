@@ -1,0 +1,16 @@
+PODS:
+  - WechatOpenSDK (1.8.2)
+
+DEPENDENCIES:
+  - WechatOpenSDK (~> 1.8.2)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
+
+PODFILE CHECKSUM: cdad5605c628a8ce11b3db9bfb96ecb79c5a5eff
+
+COCOAPODS: 1.5.0

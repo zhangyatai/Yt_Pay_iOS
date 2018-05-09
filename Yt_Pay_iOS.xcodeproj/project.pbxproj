@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B36A34620A2A9D2006ED53A /* HttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B36A34520A2A9D2006ED53A /* HttpUtils.m */; };
 		9B5E620920A29C17009F44BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E620820A29C17009F44BB /* AppDelegate.m */; };
 		9B5E620C20A29C17009F44BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E620B20A29C17009F44BB /* ViewController.m */; };
 		9B5E620F20A29C17009F44BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E620D20A29C17009F44BB /* Main.storyboard */; };
 		9B5E621120A29C18009F44BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E621020A29C18009F44BB /* Assets.xcassets */; };
 		9B5E621420A29C18009F44BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E621220A29C18009F44BB /* LaunchScreen.storyboard */; };
 		9B5E621720A29C18009F44BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E621620A29C18009F44BB /* main.m */; };
+		B623BAC0C553C35A434091BA /* libPods-Yt_Pay_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 069B2D709E1AE4D6324E72B0 /* libPods-Yt_Pay_iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001C95FB629DBFD245B6F8D4 /* Pods-Yt_Pay_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yt_Pay_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yt_Pay_iOS/Pods-Yt_Pay_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		069B2D709E1AE4D6324E72B0 /* libPods-Yt_Pay_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Yt_Pay_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B36A34420A2A9D2006ED53A /* HttpUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpUtils.h; sourceTree = "<group>"; };
+		9B36A34520A2A9D2006ED53A /* HttpUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpUtils.m; sourceTree = "<group>"; };
 		9B5E620420A29C17009F44BB /* Yt_Pay_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yt_Pay_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5E620720A29C17009F44BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B5E620820A29C17009F44BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,7 @@
 		9B5E621320A29C18009F44BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B5E621520A29C18009F44BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B5E621620A29C18009F44BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5AF95D316A3D15D66EF0FA1 /* Pods-Yt_Pay_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yt_Pay_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yt_Pay_iOS/Pods-Yt_Pay_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B623BAC0C553C35A434091BA /* libPods-Yt_Pay_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B36A34320A2A9C3006ED53A /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				9B36A34420A2A9D2006ED53A /* HttpUtils.h */,
+				9B36A34520A2A9D2006ED53A /* HttpUtils.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		9B5E61FB20A29C17009F44BB = {
 			isa = PBXGroup;
 			children = (
 				9B5E620620A29C17009F44BB /* Yt_Pay_iOS */,
 				9B5E620520A29C17009F44BB /* Products */,
+				9EDAA90585CFE60C66835933 /* Pods */,
+				AAD76BE0D9151CBBD432C69D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +77,7 @@
 		9B5E620620A29C17009F44BB /* Yt_Pay_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9B36A34320A2A9C3006ED53A /* Http */,
 				9B5E620720A29C17009F44BB /* AppDelegate.h */,
 				9B5E620820A29C17009F44BB /* AppDelegate.m */,
 				9B5E620A20A29C17009F44BB /* ViewController.h */,
@@ -71,6 +91,23 @@
 			path = Yt_Pay_iOS;
 			sourceTree = "<group>";
 		};
+		9EDAA90585CFE60C66835933 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				001C95FB629DBFD245B6F8D4 /* Pods-Yt_Pay_iOS.debug.xcconfig */,
+				A5AF95D316A3D15D66EF0FA1 /* Pods-Yt_Pay_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAD76BE0D9151CBBD432C69D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				069B2D709E1AE4D6324E72B0 /* libPods-Yt_Pay_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +115,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B5E621A20A29C18009F44BB /* Build configuration list for PBXNativeTarget "Yt_Pay_iOS" */;
 			buildPhases = (
+				1FF75601322B19BE35F37C4B /* [CP] Check Pods Manifest.lock */,
 				9B5E620020A29C17009F44BB /* Sources */,
 				9B5E620120A29C17009F44BB /* Frameworks */,
 				9B5E620220A29C17009F44BB /* Resources */,
@@ -136,6 +174,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FF75601322B19BE35F37C4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yt_Pay_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B5E620020A29C17009F44BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +203,7 @@
 				9B5E620C20A29C17009F44BB /* ViewController.m in Sources */,
 				9B5E621720A29C18009F44BB /* main.m in Sources */,
 				9B5E620920A29C17009F44BB /* AppDelegate.m in Sources */,
+				9B36A34620A2A9D2006ED53A /* HttpUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +341,13 @@
 		};
 		9B5E621B20A29C18009F44BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001C95FB629DBFD245B6F8D4 /* Pods-Yt_Pay_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLNMMS2E5R;
 				INFOPLIST_FILE = Yt_Pay_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +360,13 @@
 		};
 		9B5E621C20A29C18009F44BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5AF95D316A3D15D66EF0FA1 /* Pods-Yt_Pay_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLNMMS2E5R;
 				INFOPLIST_FILE = Yt_Pay_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
